@@ -12,10 +12,10 @@ import DJISDK
 class ProductCommunicationManager: NSObject {
 
     // Set this value to true to use the app with the Bridge and false to connect directly to the product
-    let enableBridgeMode = false
+    let enableBridgeMode = true
     
     // When enableBridgeMode is set to true, set this value to the IP of your bridge app.
-    let bridgeAppIP = "10.81.55.116"
+    let bridgeAppIP = "192.168.1.125"
     
     func registerWithSDK() {
         let appKey = Bundle.main.object(forInfoDictionaryKey: SDK_APP_KEY_INFO_PLIST_KEY) as? String
